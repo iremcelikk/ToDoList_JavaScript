@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="toast_area"></div>
+        <div class="text-center bg-orange">
+            <div class="mt-2 p-4">
+                <img class="bg-white"
+                    src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+                    class="h-10">
+            </div>
+            <div>
+                <h2 class="mt-2 text-white">Yapılacaklar Listesi</h2>
+            </div>
+            <input id="input" size="70" type="text" placeholder="Bugün ne yapacaksın?">
+            <button id="ekle_button" style="width: 150px;" class="btn btn-light" type="submit">Ekle</button>
+        </div>
+        <div class="mt-1">
+            <ul class="list-group" id="list">
+
+                <li class="li p-3 list-group-item alert alert-warning alert-dismissible fade show" 
+                role="alert"
+                onclick="clicked(this)" 
+                onmouseover="over(this)" 
+                onmouseout="out(this)">3 Litre
+                    Su İç
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="alert" aria-label="Close"></button>
+                </li>
+
+                <li class="li p-3 list-group-item alert alert-warning alert-dismissible fade show" 
+                role="alert"
+                onclick="clicked(this)" 
+                onmouseover="over(this)" 
+                onmouseout="out(this)" >Ödevleri Yap
+                    <button type=" button" class="btn-close btn-sm" data-bs-dismiss="alert" aria-label="Close"></button>
+                </li>
+
+                <li class="li p-3 list-group-item alert alert-warning alert-dismissible fade show" 
+                role="alert"
+                onclick="clicked(this)" 
+                onmouseover="over(this)" 
+                onmouseout="out(this)">En Az 3 Saat Kodlama Yap
+                    <button type=" button" class="btn-close btn-sm" data-bs-dismiss="alert" aria-label="Close"></button>
+                </li>
+
+                <li class="li p-3 list-group-item alert alert-warning alert-dismissible fade show" 
+                role="alert"
+                onclick="clicked(this)" 
+                onmouseover="over(this)" 
+                onmouseout="out(this)" >Yemek Yap
+                    <button type=" button" class="btn-close btn-sm" data-bs-dismiss="alert" aria-label="Close"></button>
+                </li>
+
+                <li class="li p-3 list-group-item alert alert-warning alert-dismissible fade show" role="alert"
+                onclick="clicked(this)" 
+                onmouseover="over(this)" 
+                onmouseout="out(this)">50 Sayfa Kitap Oku
+                    <button type=" button" class="btn-close btn-sm" data-bs-dismiss="alert" aria-label="Close"></button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/to_do_list.js"></script>
+</body>
+
+</html>

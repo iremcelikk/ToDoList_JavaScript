@@ -1,0 +1,10 @@
+.bg-orange{
+    background-color:#f78501;
+}
+.hover {
+    background-color: rgb(170, 165, 165);
+  }
+.clicked{
+    background-color: rgba(0, 132, 255, 0.836);
+    text-decoration: line-through;
+}
